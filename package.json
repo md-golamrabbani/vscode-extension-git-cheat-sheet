@@ -1,15 +1,30 @@
 {
   "name": "git-cheat-sheet",
-  "displayName": "Git Cheat Sheet",
-  "description": "",
-  "version": "0.0.1",
+  "displayName": "Free Git Cheat Sheet",
+  "description": "A helpful Git command cheatsheet for developers.",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.93.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Programming Languages"
   ],
-  "activationEvents": [],
+  "keywords": [
+    "git",
+    "cheatsheet",
+    "commands",
+    "vscode",
+    "developer-tools"
+  ],
+  "activationEvents": [
+    "onCommand:open.git.cheatsheet"
+  ],
+  "vsce": {
+    "githubBranch": "main"
+  },
+  "license": "MIT",
+  "icon": "assets/images/logo.png",
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -19,6 +34,11 @@
       }
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/md-golamrabbani/vscode-extension-git-cheat-sheet"
+  },
+  "publisher": "brighthadith",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
